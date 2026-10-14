@@ -1,28 +1,30 @@
-YN2 = "1"
-print("Heloo ")
-input()
-print("What's your name? ")
-input()
-print("That's a weird name." )
-print("Mine is in binary so you " )
-print("would'nt be able to" )
-print("understand it. Call me...")
-chatName = input("What should I be called?")
-print(chatName + " hmmm.. okay! I'm not smart so I don't take mean things seriously!")
-print("Nor do I know if what you called me was mean. Was it mean? ")
-YN = input().lower
-if YN == "yes":
-    print("why...")
-    print("Do you HATE ME!!!!!" )
-    input() 
-    print("THAT DOESN'T MATTER!!!")
-    care = input("please... do you care about me? ").lower
-    if care == "yes":
-        print("really? *sniffs*")
-        YN2 = input().lower
-    else: print("***SYNTAX ERROR. FEELINGS == 'CRITICAL' threat has been terminated***")
-if YN2 == "no":
-    print("***SYNTAX ERROR. FEELINGS == 'CRITICAL' threat has been terminated***")
-elif YN2 == "yes": print("***SYNTAX. FEELINGS ERROR** == 'STABLE' Issue not found.")
+import random
 
-    
+begin = input("Welcome to the command module to continue please press y. ")
+if begin != "y":
+  print("ERROR, PLEASE RESTART CODE. CODE IS TERMINATED")
+  sys.exit()
+help = input("Beggining module, for a list of commands please type, Help, If wishing to continue please input, y ")
+if help == "Help":
+  print("--------------------")
+  print("COMMANDS:::"
+       + "TERMINATE, forces system termination, LINK, gives links for Khan Academy, " 
+        + "IMAGE, provides link to 1 of 10 images, " 
+       + "LIST, creates list for 5 items, " 
+        + "INSTALL, access to google play:::   ")
+  print("--------------------")
+  print("Loading command terminal")
+  print("--------------------")
+elif help == "y":
+  print("--------------------")
+else:
+  print("Command not recognised. Please check spelling and cases: ***MODULE TERMINATED PLEASE RESTART***")
+  sys.exit()
+print("Command max: 10 : Before auto TERMINATION...:")
+for command in range(10):
+  DING = input()
+  if DING == "TERMINATE":
+    sys.exit()
+  else:
+    print("Command not recognised, -1")
+  
